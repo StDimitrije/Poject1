@@ -25,4 +25,12 @@ public class Category {
     public void setmName(String mName) {
         this.mName = mName;
     }
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "mId=" + mId +
+                ", mName='" + mName + '\'' +
+                '}';
+    }
 }

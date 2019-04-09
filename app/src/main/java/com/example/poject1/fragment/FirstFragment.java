@@ -18,6 +18,7 @@ import com.example.poject1.model.Expense;
 import com.example.poject1.util.Util;
 import com.example.poject1.viewmodels.MainViewModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.NonNull;
@@ -46,7 +47,8 @@ public class FirstFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view =inflater.inflate(R.layout.fragment_first_add_expense, container, false);
-        spinner =view.findViewById(R.id.second_spinner);
+        spinner =view.findViewById(R.id.first_spinner);
+        mCategoryList = new ArrayList<>();
         ArrayAdapter<Category> adapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, mCategoryList);
         spinner.setAdapter(adapter);
 

@@ -3,6 +3,7 @@ package com.example.poject1.fragment;
 
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -74,6 +75,7 @@ public class FourthFragment extends Fragment {
                 new Observer<List<Category>>() {
             @Override
             public void onChanged(List<Category> categories) {
+                Log.e("4",categories.toString());
                 mCategoryAdapter.setData(categories);
             }
         });

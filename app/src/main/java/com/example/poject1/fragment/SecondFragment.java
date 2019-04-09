@@ -41,7 +41,7 @@ public class SecondFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.second_fragment_list_item, container,false);
+        View view = inflater.inflate(R.layout.fragment_second_show_expense, container,false);
         mSpinner = view.findViewById(R.id.second_spinner);
         mFilter = view.findViewById(R.id.second_et_filter);
 
